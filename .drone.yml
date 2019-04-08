@@ -10,12 +10,11 @@ steps:
 steps:
 - name: docker  
   image: plugins/docker
-  environment:
+  settings:
     USERNAME:
       from_secret: DOCKER_USER
     PASSWORD:
       from_secret: DOCKER_PASSWORD
-  settings:
     repo: sai06/flask-drone
     tags:
       - latest
