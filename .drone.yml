@@ -1,5 +1,12 @@
-pipeline:
-  build:
-    image: node:latest
-    commands: npm install
- 
+kind: pipeline
+name: default
+
+steps:
+- name: ping
+  image: redis
+  commands:
+  - redis-cli -h cache ping
+
+services:
+- name: cache
+  image: redis
