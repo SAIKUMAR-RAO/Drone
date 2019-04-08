@@ -19,6 +19,7 @@ steps:
     tags:
       - latest
       - '1.0.0'
+     
  steps:
  - name: heroku
     app: quiet-reaches-53781
