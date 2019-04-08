@@ -9,7 +9,7 @@ steps:
 
 steps:
 - name: docker  
-  image: sai06/caching:v1
+  image: plugins/docker
   settings:
     username: ${DOCKER_USER}
     password: ${DOCKER_PASSWORD}
