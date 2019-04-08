@@ -19,7 +19,6 @@ steps:
     tags:
       - latest
       - '1.0.0'
-steps:
  deploy:
   heroku:
     app: quiet-reaches-53781
